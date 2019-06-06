@@ -4,46 +4,54 @@
 <head>
   <meta charset="utf-8">
   <title>Survey Form</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Help us improve QuigCo!</p>
-  <form id="survey-form">
-    <label id="name-label" for="name">Name</label>
-    <input id="name" type="text" value="" placeholder="Enter your name" required>
-    <label id="email-label" for="email">Email</label>
-    <input id="email" type="email" value="" placeholder="Enter your email" required>
-    <label id="number-label" for="email">Number</label>
-    <input id="number" type="number" min="0" max="9" value="" placeholder="Enter your number">
-    <label id="dropdown-label" for="dropdown">What is your current role?</label>
-    <select id="dropdown">
-      <option value="1">Student</option>
-      <option value="2">Professional</option>
-      <option value="3">Hobbyist</option>
-    </select>
-    <label id="radio-label" for="radio-btns">How likely are you to recommend QuigCo to a friend?</label>
-    <span id="radio-btns">
-      <label><input type="radio" value="Definitely" name="recommend">Definitely</label>
-      <label><input type="radio" value="Maybe" name="recommend">Maybe</label>
-      <label><input type="radio" value="Probably Not"name="recommend">Probably Not</label>
-    </span>
-    <label id="checkbox-label" for="checkboxes">Select all that apply:</label>
-    <span id="checkboxes">
-      <label><input type="checkbox" value="Painter">Painter</label>
-      <label><input type="checkbox" value="Sculptor">Sculptor</label>
-      <label><input type="checkbox" value="Illustrator">Illustrator</label>
-      <label><input type="checkbox" value="Musician">Musician</label>
-      <label><input type="checkbox" value="Actor">Actor</label>
-      <label><input type="checkbox" value="Author">Author</label>
-      <label><input type="checkbox" value="Playwright">Playwright</label>
-    </span>
-    <label id="comments-label" for="comments">Additional comments:</label>
-    <textarea name="comments" rows="8" cols="80" placeholder="Enter comments here"></textarea>
-    <input id="submit" type="submit" name="submit" value="Submit">
+  <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us improve QuigCo!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" value="" placeholder="Enter your name" required><br />
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" value="" placeholder="Enter your email" required><br />
+      <label id="number-label" for="email">Number</label>
+      <input id="number" type="number" min="0" max="9" value="" placeholder="Enter your number"><br />
+      <label id="dropdown-label" for="dropdown">What is your current role?</label>
+      <select id="dropdown">
+        <option value="1">Student</option>
+        <option value="2">Professional</option>
+        <option value="3">Hobbyist</option>
+      </select><br />
+      <div id="checkbox-div">
+        <label id="checkbox-label" for="checkboxes">Select all that apply:</label>
+        <ul id="checkboxes">
+          <li><label><input type="checkbox" value="Painter">Painter</label></li>
+          <li><label><input type="checkbox" value="Sculptor">Sculptor</label></li>
+          <li><label><input type="checkbox" value="Illustrator">Illustrator</label></li>
+        </ul>
+        <ul>
+          <li><label><input type="checkbox" value="Musician">Musician</label></li>
+          <li><label><input type="checkbox" value="Actor">Actor</label></li>
+          <li><label><input type="checkbox" value="Author">Author</label></li>
+        </ul>
+      </div>
+      <div id="radio-div">
+        <label id="radio-label" for="radio-btns">How likely are you to recommend QuigCo to a friend?</label>
+        <ul id="radio-btns">
+          <li><label><input type="radio" value="Definitely" name="recommend">Definitely</label></li>
+          <li><label><input type="radio" value="Maybe" name="recommend">Maybe</label></li>
+          <li><label><input type="radio" value="Probably Not" name="recommend">Probably Not</label></li>
+        </ul><br />
+      </div>
+      <label id="comments-label" for="comments">Additional comments:</label>
+      <textarea name="comments" placeholder="Enter comments here"></textarea><br />
+      <input id="submit" type="submit" name="submit" value="Submit">
 
-  </form>
+    </form>
+  </main>
 
   <!-- FCC Test Script -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
