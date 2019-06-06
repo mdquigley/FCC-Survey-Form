@@ -12,11 +12,11 @@
   <p id="description">Help us improve QuigCo!</p>
   <form id="survey-form">
     <label id="name-label" for="name">Name</label>
-    <input id="name" type="text" value="" placeholder="Enter your name">
+    <input id="name" type="text" value="" placeholder="Enter your name" required>
     <label id="email-label" for="email">Email</label>
-    <input id="email" type="text" value="" placeholder="Enter your email">
-    <label id="number-label" for="email">Phone Number</label>
-    <input id="number" type="text" value="" placeholder="Enter your phone number">
+    <input id="email" type="email" value="" placeholder="Enter your email" required>
+    <label id="number-label" for="email">Number</label>
+    <input id="number" type="number" min="0" max="9" value="" placeholder="Enter your number">
     <label id="dropdown-label" for="dropdown">What is your current role?</label>
     <select id="dropdown">
       <option value="1">Student</option>
