@@ -54,7 +54,7 @@ textarea {
   height: 200px;
 }
 
-@media (max-width: 375px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2), (max-width: 600px) {
   #survey-form {
     font-size: 1.4em;
   }
