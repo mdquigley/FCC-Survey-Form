@@ -11,6 +11,7 @@ main {
   display: block;
   text-align: left;
   margin: 20px;
+  line-height: 2em;
 }
 #title {
   margin-bottom: 0;
@@ -29,11 +30,51 @@ ul {
   display: flex;
   flex-direction: row;
 }
-#radio-div {
+#checkbox-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+}
+.checkboxes {
+  padding-left: 20px;
+
+}
+
+#radio-div {
+  display: flex;
+  flex-direction: column;
+}
+#radio-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 textarea {
   width: 100%;
   height: 200px;
+}
+
+@media (max-width: 375px) {
+  #survey-form {
+    font-size: 1.4em;
+  }
+  #checkbox-div {
+    display: flex;
+    flex-direction: column;
+  }
+  #checkbox-container {
+    font-size: 0.7em;
+    line-height: 1.5em;
+  }
+  #radio-div {
+    display: flex;
+    flex-direction: column;
+  }
+  #radio-btns {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    padding-left: 20px;
+  }
 }
